@@ -5,33 +5,28 @@
 <script> 
 $(document).ready(function(){
     $("#flip").hover(function(){
-        $(".panel").slideToggle("fast");
+        $(".Continent").slideToggle("fast");
     });
 });
 </script>
 
 <style> 
  #flip {
-    padding: 5px;
     text-align: center;
     background-color: pink;
     border: solid 1px blue;
 }
 
-.panel {
-    padding: 20px;
-    display: none;
-}
 </style>
 </head>
 <body>
  
 <div id="flip">Hover to silde down UP or Down</div>
-<div class="panel">Antartica</div>
-<div class="panel">Australia</div>
-<div class="panel">United States</div>
-<div class="panel">England</div>
-<div class="panel">Asia</div>
+<div class="Continent">Antartica</div>
+<div class="Continent">Australia</div>
+<div class="Continent">United States</div>
+<div class="Continent">England</div>
+<div class="Continent">Asia</div>
 
 </body>
 </html>

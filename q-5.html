@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Question-5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<div id="main">
+		<p class="target"> Main container </p>
+	</div>
+	<div id="not_main">
+		<p class="target">Another container</p>
+	</div>
+
+		<button class="target">Ques-Change the font size of ".target" which has parent element with id name "#main"</button>
+
+	<script>
+		$(document).ready(function() {
+			$("button").click(function() {
+				$(".target").parent("#main").css('font-size', '200%');
+			});
+			
+		});
+	</script>
+	</body>
+</html>

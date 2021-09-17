@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Q-9</title>
+</head>
+
+<body>
+    <div>
+        <select name="Country" id="Country_dropdown">
+            <option value="Select Country">Select Country</option>
+            <option value="India">India</option>
+            <option value="England">England</option>
+            <option value="United State">United State</option>
+            <option value="Malaysia">Malaysia</option>
+        </select>
+        <div id="Country_display" <br/>>
+            <strong>< />Country selected-----</strong>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+       $('#Country_dropdown').change((e)=>{
+           $('#Country_display').append($('#Country_dropdown').val());
+           //$('#Country_display').html($('#Country_dropdown').val());
+       })
+    })
+</script>
+
+</html>
