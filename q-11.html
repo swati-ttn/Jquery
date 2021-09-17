@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div id ="Link"> This is link to Google <br/> <br /></id>
+        <a href="https://www.google.com"> www.google.com</a><br/>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+       $('#Link').click((a)=>{
+           a.preventDefault();
+           alert("Can't Direct to Website");
+       })
+       });
+    </script>
+</html>
