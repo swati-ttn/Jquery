@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q6</title>
+	<style>
+		div, p, button{
+		text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<p> ASIA</p>
+		<p>AFRICA</p>
+		<p>North and South America</p>
+	</div>
+
+	<button>Change all div tags with p tags </button>
+
+<script>
+	$(document).ready(function()
+	{
+		$("#button").click(function() 
+		{
+			$("div").replaceWith($("<p>"+$("div").text()+"</p>"));
+		});
+	});
+</script>
+
+</body>
+</html>
