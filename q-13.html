@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Q13</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="elements">
+        <div>
+            First div element.
+            <br />
+        </div>
+        <div>
+            Second div element.
+            <br /><br /><br /><br /><br /><br /><br />
+        </div>
+        <div>
+            Third div element.
+            <br /><br /><br /><br /><br />
+        </div>
+        <span>
+            Fourth span element.
+            <br /><br /><br /><br /><br />
+        </span>
+	</div>
+
+    <script>
+        $(document).ready(function()
+        {
+            $(".elements").children().each(function(i){
+                console.log("Height - ", $(this).height());
+            })
+
+        });
+    </script>
+    
+</body>
+</html>
